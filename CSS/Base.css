@@ -1281,6 +1281,15 @@ h4 {
   z-index: 1000000;
 
 }
+.footer p{
+  position:relative;
+  margin-top: 0px;
+  
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+
+}
 
 .footer-line {
   height:1px;
