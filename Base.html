@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Webmap Navigation Bar</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Local files -->
+
+  
+
+  <!--CSS-->
+  <link rel="stylesheet" href="CSS/Normalize.css">
+  <link rel="stylesheet" href="CSS/base.css">
+  <link rel="stylesheet" href="CSS/main.css">
+ 
+
+  <!-- Non local files-->
+  <!--Additional JS-->
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script id="applicationScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!--Additional CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Other Additions-->
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+  <!-- Nav bar-->
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+
+      <!--Navbar logo and topic-->
+      <ul class="logo">
+        <li>
+          <a href="index.html"></a><i class="fab fa-500px"></i> 
+        </li>
+        <li>
+          <li><a href="#home"><i aria-hidden="true"></i><h1> Mapping of Kibera Slum</h1></a>
+        </li>
+      </ul>
+
+  
+      <!-- Navbar Links -->
+        <ul class="topnav-right">
+          <li class = "toplinks"><a href="#home"><i class="fa fa-sign-in" aria-hidden="true"></i>Login</a></li>
+          <li class = "toplinks" style="border-right: solid 1px rgba(160, 160, 160, 0.3);"><a href="#home"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign in</a></li>
+        </ul> 
+        <ul class="menuIcon openbtn " onclick="openNav()" style="right: -10px !important; top:2px !important;">
+        <li> 
+          <span class="icon icon-bars"></span>
+          <span class="icon icon-bars overlay"></span>
+        </li>
+        </ul>  
+    </div>
+  </nav>
+
+    <!--Second navbar-->
+    <nav id="navbar">
+      
+      <ul class="bottomnav-left">
+        <li class = "bottomlinks"><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li class = "bottomlinks"><a href="geoportal.html"class="active"><i class="fa fa-fw fa-globe"></i>Geoportal</a></li>
+      </ul>
+      </div>
+
+      <!-- Search Bar-->
+      <div class = "search-cont" >
+      <ul class="search-bar">
+        <li>
+          <input type="text" placeholder="Search..">
+        </li>
+      </ul>
+    </div>
+    </nav>
+      <!-- Menu Icon -->
+      <div class="sidepanel" id="mySidepanel">
+        <ul class="sidenav">
+          <li class="dropdown-btn">
+            <a>Data <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Layers</a>
+            <a href="#">Documents</a>
+            <a href="#" >Remote Services</a>
+            <a href="#">Upload Layer</a>
+            <a href="#">Create Layer</a>
+            <a href="#">Upload Document</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Maps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">Explore Maps</a>
+            <a href="#">Create Map</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>Apps<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>    
+          <div class="dropdown-container">
+            <a href="#">Explore Apps</a>
+          </div>
+          <li class="dropdown-btn">
+            <a>About<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          </li>
+          <div class="dropdown-container">
+            <a href="#">People</a>
+            <a href="#">Groups</a>
+            <a href="#">Group Categories</a>
+            <a href="#">Invite Users</a>
+    
+          </div>
+        
+     
+        <li>
+          <a href="#" class="button" href="javascript:void(0)" onclick="closeNav()">
+            <span>C</span><span>L</span><span>O</span><span>S</span><span>E</span>
+           
+            <b class="backgroundHover"></b>
+          </a>
+        </li>
+      </ul>
+      </div>
+
+
+
+<!--Footer-->
+<div class="footer">
+    
+Copyright © 2023 All Rights Reserved.
+  
+
+  <div class="footer-social-icons">
+    
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+    </ul>
+</div>
+</div>
+
+
+<!--Scripts-->
+  <!--JS-->
+  <script src="JS/main.js"></script>
+  <script src="JS/Sidepanels.js"></script>
+  <script src="JS/Normalize.js"></script>
+
+</body>
+</html>
